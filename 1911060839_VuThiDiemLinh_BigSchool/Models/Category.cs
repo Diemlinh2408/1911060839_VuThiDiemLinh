@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
-
+//d
 namespace _1911060839_VuThiDiemLinh_BigSchool.Models
 {
     public class Category
