@@ -17,7 +17,7 @@ namespace _1911060839_VuThiDiemLinh_BigSchool.Models
             return userIdentity;
         }
     }
-
+    //122s
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Course>Courses { get; set; }
