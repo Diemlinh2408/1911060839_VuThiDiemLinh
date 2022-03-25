@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
+using _1911060839_VuThiDiemLinh_BigSchool.Models;
 using System.Linq;
 using System.Web;
 
 namespace _1911060839_VuThiDiemLinh_BigSchool.ViewModels
 {
-    public class ValidTime : ValidTimeAttribute
+    public class ValidTime : ValidationAttribute
     {
         public override bool IsValid(object value)
         {

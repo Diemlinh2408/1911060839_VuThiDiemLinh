@@ -19,6 +19,7 @@ namespace _1911060839_VuThiDiemLinh_BigSchool.Controllers
         // GET: Courses
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create( CourseViewModels viewModels)
         {
             if(!ModelState.IsValid)
@@ -40,15 +41,17 @@ namespace _1911060839_VuThiDiemLinh_BigSchool.Controllers
 
 
         }
+
+        [Authorize]
         public ActionResult Create()
         {
-            var viewModels = new CourseViewModels
+            var viewModel = new CourseViewModels
             {
-                Categories = _dbContext.Categories.ToList(),
+                Categories = _dbContext.Categories.ToList()
             };
-            return View(viewModels);
+            return View(viewModel);
         }
 
-         
+
     }
 }
